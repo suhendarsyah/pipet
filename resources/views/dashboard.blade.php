@@ -85,6 +85,9 @@
           </div>
           <!-- ./col -->
         </div>
+
+        @yield('peternak-index')
+       
         <!-- /.row -->
         <!-- Main row -->
         <div class="row">
@@ -134,7 +137,7 @@
             </div>
             <!--/.direct-chat -->
 
-            
+           
 
             <!-- solid sales graph -->
             <div class="card bg-gradient-info">
