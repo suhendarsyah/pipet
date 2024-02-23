@@ -1,6 +1,9 @@
 <div>
   <div class="my-3 p-3 bg-body rounded shadow-sm">
     <h1>{{ $title }}</h1>
+
+    @livewire('peternak.peternak-create')
+    
       {{-- {{ $peternak->links() }} --}}
       <table class="table table-striped">
           <thead>

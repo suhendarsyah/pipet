@@ -8,5 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Peternak extends Model
 {
     use HasFactory;
-    protected $gurded =[];
+    protected $guarded =[];
 }
