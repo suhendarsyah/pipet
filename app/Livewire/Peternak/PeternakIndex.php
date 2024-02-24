@@ -17,9 +17,17 @@ class PeternakIndex extends Component
     public function render()
     {
         return view('livewire.peternak.peternak-index',[
-            'peternak'=>Peternak::orderBy('id','desc')->paginate(4),
+            'peternak'=>Peternak::orderBy('id','desc')->paginate(10),
             'title'=> 'Data Peternak'
         ]);
+    }
+
+    public function destroy($id){
+        if($id){
+            $data = Peternak::find($id);
+            $data->delete();
+            session()->flash('success','Peternak Berhasil di Hapus');
+        }
     }
 
     public function getPeternak($id){

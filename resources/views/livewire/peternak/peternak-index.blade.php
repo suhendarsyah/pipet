@@ -1,5 +1,11 @@
 <div>
     
+    @if (session()->has('success'))
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('success') }}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+@endif
 
 
   <div class="my-3 p-3 bg-body rounded shadow-sm">
@@ -45,7 +51,7 @@
                 <td>{{ $item->telp }}</td>
                 <td>
                     <a href="" wire:click.prevent="getPeternak({{ $item->id }})" class="btn btn-warning btn-sm">Edit</a>
-                    <a href="" class="btn btn-danger btn-sm">Del</a>
+                    <a href="" wire:click.prevent="destroy({{ $item->id }})" class="btn btn-danger btn-sm">Del</a>
                 </td>
             </tr>
             
