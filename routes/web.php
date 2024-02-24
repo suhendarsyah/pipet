@@ -30,6 +30,8 @@ Route::middleware('auth')->group(function () {
         return view('dashboard');
     })->middleware(['auth'])->name('dashboard');
     route ::get('dashboard/peternak',[PeternakController::class, 'index'])->name('peternak.index');
+    
+   
 
 
     

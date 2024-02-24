@@ -9,7 +9,13 @@
 @endpush
 
 
+
+
 @section('peternak-index')
+
+
   {{-- <livewire:peternak.peternak-index> --}}
     @livewire('peternak.peternak-index')
+
+    
 @endsection
